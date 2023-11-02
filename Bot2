@@ -1,0 +1,42 @@
+import discord
+from discord.ext import commands
+
+intents = discord.Intents.default()
+intents.message_content = True
+
+bot = commands.Bot(command_prefix='$', intents=intents)
+
+@bot.event
+async def on_ready():
+    print(f'We have logged in as {bot.user}')
+
+@bot.command()
+async def hello(ctx):
+    await ctx.send(f'Hola, soy un bot {bot.user}!')
+
+@bot.command()
+async def heh(ctx, count_heh = 5):
+    await ctx.send("he" * count_heh)
+
+@bot.command()
+async def invitar(ctx):
+    await ctx.send("¿ a quien quieres invitar a la jornada de recolección ?")
+
+@bot.command()
+async def consejo(ctx):
+    await ctx.send("lleve hidratación o botella de agua y tres bolsas de basura")   
+
+@bot.command()
+async def consejo2(ctx):
+    await ctx.send("Use bolsas de tela y no use bolsas de plastico para ir de compras") 
+
+@bot.command()
+async def consejo3(ctx):
+    await ctx.send("Use menos plastico :)")     
+
+@bot.command()
+async def mensaje(ctx):
+    await ctx.send("Ayudanos a mejorar el planeta Gracias :)")
+
+
+bot.run("x")
