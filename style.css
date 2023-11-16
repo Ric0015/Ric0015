@@ -1,0 +1,34 @@
+body {
+    font-family: Arial,  sans-serif; /* Familia de fuentes */
+    font-size: 15px; /* El tamaño de la fuente principal en el tag <p></p> */
+    background-color: #020202; /* El color del fondo de la página web */
+    color: #d32020; /* El color del texto*/ }
+h1 {
+    color: #089add; /* El color de la cabecera */
+    font-size: 60px; /* El tamaño de la fuente de la cabecera */
+    font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */}
+body {
+    font-family: Arial,  sans-serif; /* Familia de fuentes */
+    font-size: 15px; /* El tamaño de la fuente principal en el tag <p></p> */
+    background-color: #020202; /* El color del fondo de la página web */
+    color: #d32020; /* El color del texto*/ }
+@keyframes color-change {
+        0% {
+          color: blue;
+        }
+      
+        50% {
+          color: red;
+        }
+      
+        100% {
+          color: rgb(35, 194, 75);
+        }
+    }
+    
+h1 {
+        animation: color-change 3s infinite;
+    }
+     
+    
+    
